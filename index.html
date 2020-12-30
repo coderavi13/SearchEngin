@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Search Me!!</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="offscreen">
+            Search Engine powered by wikipedia
+        </h1>
+        <section class="searchEntry">
+            <h2 class="offscreen">Search Term Entry</h2>
+            <div class="logo" aria-hidden="true"> Search Me</div>
+            <form id="searchbar" class="searchBar">
+                <label class="offscreen" for="search"> Enter Search tearm</label>
+                <input id="search" type="text" autocomplete="off" />
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="clear search term">X
+                </div>
+                <button id="searchButton" class="button searchButton" type="submit"
+                    aria-label="submit Button"><i class="fas fa-search"></i></button>
+            </form>
+        </section>
+        <section class="results">
+            <h2 class="offscreen">Search Result</h2>
+            <div class="statBar">
+                <div id="stats" class="stats" aria-live="assertive"></div>
+            </div>
+            <div id="searchResult" class="searchResult">
+                <div class="resultItem">
+                    <div class="resultTitle">
+                        <a href="">Temp</a>
+                    </div>
+                </div>
+                <div class="resultContent">
+                    <div class="resultImage">
+                        <img src="https://source.unsplash.com/random/50x60" alt="Temp">
+                    </div>
+                    <div class="resultText">
+                        <p class="resultDescription">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam iure rerum impedit harum, ut
+                            magnam?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span aria-hidden="true">&lt;&lt;</span> Powered by <a href="https://www.google.com/"
+                target="_blank">Google</a><span aria-hidden="true">&gt;&gt;</span></p>
+    </footer>
+</body>
+
+</html>
